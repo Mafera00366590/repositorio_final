@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+            text-align: center;
+        }
+        .success {
+            color: green;
+        }
+        .error {
+            color: red;
+        }
+        .logo {
+             max-width: 200px; 
+        }  
+        .contenedor{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }  
+        div {
+            margin-bottom: 20px;
+        }  
+        input[type="email"] {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin: 0 auto; 
+            display: block;
+        }
+        input[type="password"] {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin: 0 auto; 
+            display: block;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+            text-align: center;
+        }
+        button[type="submit"] {
+            padding: 10px 20px; 
+            background-color: #ff2aaa; 
+            color: #fff; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer;
+            font-size: 16px; 
+            transition: background-color 0.3s ease;
+            display: block; 
+            margin: 0 auto; 
+        }
+        button[type="submit"]:hover {
+            background-color: #494547; 
+        }
+        div a {
+            color: #ff2aaa; 
+            text-decoration: none; 
+        }
+        div a:hover {
+            text-decoration: underline; 
+        }
+    </style>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <title>Inicio de sesión</title>
+      <!-- Favicon-->
+      <link rel="icon" type="image/x-icon" href="../fotos/disney_logo.png" />
+      
+</head>
+<body>
+            <form action="../php/inicio.php" method="post" class="container">
+                <div class="contenedor">
+                    <img src="../fotos/disney_logo.png" alt="Logo de Disney" class="logo">
+                </div>
+                <h1>Inicio de sesión</h1>
+                <!-- ingresa correo -->
+                <div>
+                    <label class="form-label" for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" class="form-control" required> 
+                </div>
+                <!-- ingresa contraseña -->
+                <div>
+                    <label class="form-label" for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" name="contraseña" class="form-control" required> 
+                </div>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+    
+        <div>
+            <p>¿No tienes una cuenta? <a href="../php/registro.php">Regístrate</a></p>
+        </div>
+    </div>
+</body>
+</html>
